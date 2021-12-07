@@ -8,8 +8,8 @@ function calcArea(base, heigth) { //Defini dois paramentros para minha função;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) { 
+  return string.split(''); //Retorna o valor do paramento, que deve ser uma string, a partir do método .string, que divide uma string em uma lista ordenada no array;
 }
 
 // Desafio 4
