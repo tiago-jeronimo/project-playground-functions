@@ -1,10 +1,6 @@
 // Desafio 1
 function compareTrue(b1,b2) {
-  if (b1 === true && b2 === true){
-    return true;
-  } else{
-    return false;
-  }
+  return b1 && b2; //Estava dando erro. O enuciado pede que use apenas o operador &&. Vamos vê se dá certo ¯\_(ツ)_/¯
 }
 
 // Desafio 2
