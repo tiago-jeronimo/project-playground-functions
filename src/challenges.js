@@ -4,7 +4,7 @@ function compareTrue(b1,b2) {
 }
 // Desafio 2
 function calcArea(base, heigth) { //Defini dois paramentros para minha função;
-  return (base*heigth)/2 //Fiz com que a função retorna-se a multiplicação dos dois parâmetros dividido por dois;
+  return (base*heigth)/2; //Fiz com que a função retorna-se a multiplicação dos dois parâmetros dividido por dois;
 }
 
 // Desafio 3
@@ -14,12 +14,12 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(x1) { //criei um parâmetro
-  return x1[x1.length -1]. concat(', ') + x1[0] // a função retornará o valor do tamanho do array na posição do tamanho dele (length) menos 1 (ou seja, sua última posição) concatenado com o array de posição 0 (ou seja, sua primeira posição)
+  return x1[x1.length -1]. concat(', ') + x1[0]; // a função retornará o valor do tamanho do array na posição do tamanho dele (length) menos 1 (ou seja, sua última posição) concatenado com o array de posição 0 (ou seja, sua primeira posição)
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) { // declarei parâmetros 
+  return (wins*3) + ties; // a função retronará a soma de vitórias (dado que o valor de wins equivale a ele vezes 3) com o de empate
 }
 
 // Desafio 6
