@@ -9,12 +9,12 @@ function calcArea(base, heigth) { //Defini dois paramentros para minha função;
 
 // Desafio 3
 function splitSentence(string) { 
-  return string.split(' '); //Retorna o valor do paramento, que deve ser uma string, a partir do método .string, que divide uma string em uma lista ordenada no array; Deu erro por causa de um espaço entre ' ' ?
+  return string.split(' '); //Retorna o valor do paramento, que deve ser uma string, a partir do método .split, que divide uma string em uma lista ordenada no array; Deu erro por causa de um espaço entre ' ' ?
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(x1) { //criei um parâmetro
+  return x1[x1.length -1]. concat(', ') + x1[0] // a função retornará o valor do tamanho do array na posição do tamanho dele (length) menos 1 (ou seja, sua última posição) concatenado com o array de posição 0 (ou seja, sua primeira posição)
 }
 
 // Desafio 5
