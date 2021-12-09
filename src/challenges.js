@@ -14,17 +14,26 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(x1) { //criei um parâmetro
-  return x1[x1.length -1]. concat(', ') + x1[0]; // a função retornará o valor do tamanho do array na posição do tamanho dele (length) menos 1 (ou seja, sua última posição) concatenado com o array de posição 0 (ou seja, sua primeira posição)
+  return x1[x1.length -1]. concat(', ') + x1[0]; // a função retornará o valor do tamanho do array na posição do tamanho dele (length) menos 1 (ou seja, sua última posição) concatenado com o array de posição 0 (ou seja, sua primeira posição);
 }
 
 // Desafio 5
-function footballPoints(wins, ties) { // declarei parâmetros 
-  return (wins*3) + ties; // a função retronará a soma de vitórias (dado que o valor de wins equivale a ele vezes 3) com o de empate
+function footballPoints(wins, ties) { // declarei parâmetros;
+  return (wins*3) + ties; // a função retronará a soma de vitórias (dado que o valor de wins equivale a ele vezes 3) com o de empate;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numbersArray) { //criei o parametro da função;
+  let numbers = numbersArray; //criei uma váriavel que armazena o valor do parâmetro, que por acaso deve ser uma array;
+  let higherNumber = Math.max(... numbersArray); //criei uma váriavel que armazena o maior número do array com a proriedade Math.max.apply em sua versão(?) curta Math.max(...arr) =>  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max ;
+  let conter = 0; //váriavel que armazenará minha contagem; 
+  
+    for (let i = 0; i <numbersArray.length; i +=1){ //estutura de repetição que irá enlaçar até o tamanho do meu numbersArray;
+      if(numbers[i] === higherNumber){ // condicional que irá passar por todos os valores de numbers na posição i, caso o valor dessa posição seja igual ao meu maior número(higherNumber)...
+        conter +=1; //o contador será adicionado 1;
+      }
+    }
+    return conter; // retorna o contador
 }
 
 // Desafio 7
