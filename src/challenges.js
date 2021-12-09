@@ -37,9 +37,19 @@ function highestCount(numbersArray) { //criei o parametro da função;
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+function catAndMouse(mouse, cat1, cat2) { // criei os parâmetros 
+  let cat1Distance = Math.abs(cat1 - mouse); //criei váriael que armazena a distancia do gato 1 até o rato por uma subtração de valores absolutos
+  let cat2Distance = Math.abs(cat2 - mouse); //criei váriael que armazena a distancia do gato 2 até o rato por uma subtração de valores absolutos
+
+  if (cat1Distance < cat2Distance){ //condicional que, se o resultado da váriavel cat1Distance for menor que o resultado da váriavel cat2Distance...
+    return 'cat1'; //então ele retornará o cat1, por ele ser menor em valor que cat2
+    }
+    if (cat1Distance > cat2Distance){ //condicional que, se o resultado da váriavel cat1Distance for maior que o resultado da váriavel cat2Distance...
+    return 'cat2'; //então ele retornará o cat2, por ele ser menor em valor que cat1
+    } 
+    return 'os gatos trombam e o rato foge'; // se nenhuma das condicionais efetivadas (nenhum menor que o outro), ela derá esse retorno. 
+  }
+
 
 // Desafio 8
 function fizzBuzz() {
