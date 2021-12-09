@@ -52,8 +52,24 @@ function catAndMouse(mouse, cat1, cat2) { // criei os parâmetros
 
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(p1) {
+  let result = [];
+
+  for(let i = 0; i < p1.length; i+=1){
+    if(p1[i] % 3 === 0 && p1[i] % 5 === 0){
+      result.push('fizzBuzz');
+
+    } else if (p1 [i] % 3 === 0){
+      result.push('fizz');
+      
+    } else if(p1[i] % 5 === 0){
+      result.push('buzz');
+      
+    } else {
+      result.push('bug!')
+    }
+  }
+      return result;
 }
 
 // Desafio 9
